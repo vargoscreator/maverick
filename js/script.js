@@ -26,50 +26,50 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // const parallaxItems = [
-    //     { selector: '.hero__lamp', strength: 150 },
-    //     { selector: '.hero__icon', strength: 40 },
-    //     { selector: '.hero__make', strength: 20 },
-    //     { selector: '.hero__eye', strength: 120 },
-    //     { selector: '.valore__maverick', strength: 20 },
-    //     { selector: '.valore__consulting', strength: 30 },
-    //     { selector: '.obiettivo-first', strength: 50 },
-    //     { selector: '.obiettivo-last', strength: 30 },
-    //     { selector: '.club__make', strength: 30 },
-    //     { selector: '.partner__shape', strength: 70 },
-    // ];
-    // let isParallaxActive = window.innerWidth > 768;
-    // document.addEventListener('mousemove', (event) => {
-    //     if (isParallaxActive) {
-    //         parallaxItems.forEach(item => {
-    //             const image = document.querySelector(item.selector);
-    //             if (image) {
-    //                 handleMouseMove(event, image, item.strength);
-    //             }
-    //         });
-    //     }
-    // });
-    // const updateParallaxState = () => {
-    //     isParallaxActive = window.innerWidth > 768;
-    //     if (!isParallaxActive) {
-    //         parallaxItems.forEach(item => {
-    //             const image = document.querySelector(item.selector);
-    //             resetImagePosition(image);
-    //         });
-    //     }
-    // };
-    // const resetImagePosition = (image) => {
-    //     if (image) image.style.transform = 'none';
-    // };
-    // const handleMouseMove = (event, image, strength) => {
-    //     const mouseX = event.clientX;
-    //     const mouseY = event.clientY;
-    //     const moveX = (mouseX / window.innerWidth - 0.5) * strength; // Сила параллакса по X
-    //     const moveY = (mouseY / window.innerHeight - 0.5) * strength; // Сила параллакса по Y
-    //     image.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    // };
-    // window.addEventListener('resize', updateParallaxState);
-    // window.addEventListener('load', updateParallaxState);
+    const parallaxItems = [
+        { selector: '.hero__lamp', strength: 150 },
+        { selector: '.hero__icon', strength: 40 },
+        { selector: '.hero__make', strength: 20 },
+        { selector: '.hero__eye', strength: 120 },
+        { selector: '.valore__maverick', strength: 20 },
+        { selector: '.valore__consulting', strength: 30 },
+        { selector: '.obiettivo-first', strength: 50 },
+        { selector: '.obiettivo-last', strength: 30 },
+        { selector: '.club__make', strength: 30 },
+        { selector: '.partner__shape', strength: 70 },
+    ];
+    let isParallaxActive = window.innerWidth > 768;
+    document.addEventListener('mousemove', (event) => {
+        if (isParallaxActive) {
+            parallaxItems.forEach(item => {
+                const image = document.querySelector(item.selector);
+                if (image) {
+                    handleMouseMove(event, image, item.strength);
+                }
+            });
+        }
+    });
+    const updateParallaxState = () => {
+        isParallaxActive = window.innerWidth > 768;
+        if (!isParallaxActive) {
+            parallaxItems.forEach(item => {
+                const image = document.querySelector(item.selector);
+                resetImagePosition(image);
+            });
+        }
+    };
+    const resetImagePosition = (image) => {
+        if (image) image.style.transform = 'none';
+    };
+    const handleMouseMove = (event, image, strength) => {
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+        const moveX = (mouseX / window.innerWidth - 0.5) * strength; // Сила параллакса по X
+        const moveY = (mouseY / window.innerHeight - 0.5) * strength; // Сила параллакса по Y
+        image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    };
+    window.addEventListener('resize', updateParallaxState);
+    window.addEventListener('load', updateParallaxState);
 
 
     const header = document.querySelector('header');
