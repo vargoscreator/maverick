@@ -426,6 +426,7 @@ a.text-underline:hover{
         gap: 9px;
         right: 3px;
         bottom: -98px;
+        display: none;
     }
 }
 @media (max-width: 767px) {
@@ -549,6 +550,9 @@ a.text-underline:hover{
     background-color: #FF4B00;
     color: #EBEBEB;
 }
+.hero-icons{
+    display: none;
+}
 @keyframes rotateClockwise {
     0% {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -587,6 +591,7 @@ a.text-underline:hover{
     .hero__btn{
         margin-top: 199px;
         margin-right: -24px;
+        
     }
     .hero__icon {
         top: -246px;
@@ -649,6 +654,11 @@ a.text-underline:hover{
         font-size: 32px;
         height: 101px;
         max-width: 454px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 103%; /* 32.96px */
+        letter-spacing: -1.6px;
+        text-transform: uppercase;
     }
     .hero__eye {
         left: 80px;
@@ -697,6 +707,8 @@ a.text-underline:hover{
         font-size: 24px;
         height: 83px;
         max-width: 341px;
+        line-height: 103%; /* 24.72px */
+        letter-spacing: -1.2px;
     }
     .hero__descr {
         right: initial;
@@ -711,6 +723,23 @@ a.text-underline:hover{
         width: 114.324px;
         left: -2px;
         bottom: 46px;
+    }
+    .hero-icons{
+        display: flex;
+        width: max-content;
+        position: absolute;
+        top: -60px;
+        height: max-content;
+    }
+    .hero-icons .header__icons{
+        display: n;
+        bottom: -84px;
+        right: 0;
+    }
+    .hero-icons .header__icons-item svg {
+        max-width: 53px;
+        width: 53px;
+        max-height: 53px;
     }
 }
 @media (max-width: 767px) {
@@ -753,6 +782,14 @@ a.text-underline:hover{
         top: 203px;
         right: 20px;
     }
+    .hero-icons{
+        top: -40px;
+    }
+    .hero-icons .header__icons-item svg {
+        max-width: 33px;
+        width: 33px;
+        max-height: 33px;
+    }
 }
 @media (max-width: 479px) {
     .hero__title {
@@ -788,6 +825,7 @@ a.text-underline:hover{
         font-size: 16px;
         height: 50px;
         max-width: 224px;
+        letter-spacing: -0.8px;
     }
     .hero__icon {
         width: 90.47px;
@@ -806,21 +844,23 @@ a.text-underline:hover{
 }
 .valore__inner{
     max-width: 387px;
-    margin-left: 540px;
+    margin-left: 650px;
     position: relative;
 }
 .valore__descr{
     margin-top: 15px;
+    font-size: 36px;
+    line-height: 115%;
 }
-.valore__maverick{
+.valore__maverick {
     position: absolute;
-    bottom: -398px;
-    left: 160px;
+    bottom: -226px;
+    left: 93px;
 }
-.valore__consulting{
+.valore__consulting {
     position: absolute;
-    bottom: -543px;
-    left: 160px;
+    bottom: -375px;
+    left: 93px;
 }
 @media (max-width: 1640px) {
     .valore{
@@ -836,7 +876,7 @@ a.text-underline:hover{
         margin-top: -124px;
     }
     .valore__inner{
-        margin-left: 280px;
+        margin-left: 290px;
     }
     .valore__consulting, .valore__maverick {
         left: 302px;
@@ -845,6 +885,9 @@ a.text-underline:hover{
     .valore__maverick {
         left: initial;
         right: 0;
+    }
+    .valore__descr{
+        font-size: 24px;
     }
 }
 @media (max-width: 1279px) {
@@ -860,12 +903,16 @@ a.text-underline:hover{
     }
 }
 @media (max-width: 999px) {
+    #visione{
+        top: -150px;
+    }
     .valore__inner {
         margin-left: auto;
         max-width: 337px;
     }
     .valore__descr{
         margin-top: 10px;
+        font-size: 20px;
     }
     .valore__consulting, .valore__maverick {
         bottom: -250px;
@@ -908,7 +955,7 @@ a.text-underline:hover{
 }
 /* missione */
 .missione{
-    margin-top: -100px;
+    margin-top: -240px;
     position: relative;
 }
 #missione{
@@ -1006,6 +1053,9 @@ a.text-underline:hover{
 @media (max-width: 999px) {
     .missione {
         margin-top: 0px;
+    }
+    #missione{
+        top: -150px;
     }
     .missione__inner{
         margin-left: 0;
@@ -1172,9 +1222,13 @@ a.text-underline:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .2s ease;
 }
-.settori__item.active{
+.settori__item:hover{
     background: #FF4B00;
+}
+.settori__item:hover .settori__item-icon{
+    transform: rotate(20deg) scale(1.1);
 }
 .settori__item-name{
     font-family: 'Inter', sans-serif;
@@ -1280,6 +1334,9 @@ a.text-underline:hover{
 @media (max-width: 999px) {
     .settori{
         margin-top: 151px;
+    }
+    #settori{
+        top: -150px;
     }
     .settori__inner{
         gap: 30px;
@@ -1457,6 +1514,9 @@ a.text-underline:hover{
 @media (max-width: 999px) {
     .obiettivo {
         margin-top: 218px;
+    }
+    #obiettivo{
+        top: -150px;
     }
     .obiettivo__content {
         margin-left: 179px;
@@ -1648,6 +1708,9 @@ a.text-underline:hover{
     .club{
         margin-top: 52px;
     }
+    #club{
+        top: -150px;
+    }
     .club__title{
         max-width: 345px;
         align-items: center;
@@ -1775,23 +1838,23 @@ a.text-underline:hover{
     }
 }
 
-/* innoval */
-.innoval{
+/* innovai */
+.innovai{
     margin-top: -120px;
 }
-.innoval__inner{
+.innovai__inner{
     width: 100%;
     max-width: 850px;
     margin-right: 166px;
     margin-left: auto;
 }
-.innoval__title{
+.innovai__title{
     flex-direction: column;
     align-items: start;
     gap: 0;
     line-height: 20px;
 }
-.innoval__name{
+.innovai__name{
     margin-top: 15px;
     color: #FF4B00;
     font-family: 'Inter', sans-serif;
@@ -1799,67 +1862,67 @@ a.text-underline:hover{
     font-weight: 700;
     line-height: 129%; /* 46.44px */
 }
-.innoval__descr{
+.innovai__descr{
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     line-height: 129%;
     letter-spacing: normal;
     margin-top: 30px;
 }
-.innoval__descr span{
+.innovai__descr span{
     letter-spacing: -1.44px;
 }
 @media (max-width: 1500px) {
-    .innoval {
+    .innovai {
         margin-top: -200px;
     }
-    .innoval__inner {
+    .innovai__inner {
         max-width: 620px;
     }
 }
 @media (max-width: 1279px) {
-    .innoval {
+    .innovai {
         margin-top: -68px;
     }
-    .innoval__inner {
+    .innovai__inner {
         margin-right: 0;
         max-width: 455px;
     }
-    .innoval__title{
+    .innovai__title{
         flex-direction: row;
         align-items: center;
         gap: 20px;
         line-height: normal;
     }
-    .innoval__title br{
+    .innovai__title br{
         display: none;
     }
 }
 @media (max-width: 999px) {
-    .innoval {
+    .innovai {
         margin-top: -278px;
     }
-    .innoval__inner {
+    .innovai__inner {
         max-width: 348px;
     }
-    .innoval__name,
-    .innoval__descr{
+    .innovai__name,
+    .innovai__descr{
         font-size: 20px;
     }
 }
 @media (max-width: 767px) {
-    .innoval {
+    .innovai {
         margin-top: 40px;
     }
 }
 @media (max-width: 479px) {
-    .innoval__inner {
+    .innovai__inner {
         max-width: 265px;
     }
-    .innoval__name, .innoval__descr {
+    .innovai__name, .innovai__descr {
         font-size: 18px;
     }
-    .innoval__name{
+    .innovai__name{
         margin-top: 5px;
     }
 }
@@ -1907,6 +1970,42 @@ a.text-underline:hover{
     align-items: center;
     justify-content: center;
     gap: 25px;
+    position: relative;
+}
+.partner__icons figure {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    perspective: 500px;
+} 
+.partner__icons figure div {
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.25s ease;
+}
+.partner__icons figure:hover div {
+    transform: rotateX(-90deg);
+}
+.partner__icons figure span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 50px;
+    font-size: 17pt;
+    text-align: center;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}  
+.partner__icons figure span:nth-child(1) {
+    transform: translate3d(0, 0, 30px);
+    color: #fff;
+}
+.partner__icons figure span:nth-child(2) {
+    color: rgb(100, 150, 200); /* Используйте тот же цвет, что и для body */
+    transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
 .partner__descr{
     margin-top: 112px;
@@ -2012,6 +2111,8 @@ a.text-underline:hover{
         order: 1;
         margin-top: 50px;
         font-size: 20px;
+        line-height: 103%; /* 16.48px */
+        letter-spacing: -1px;
         max-width: 344px;
         height: 70px;
     }
@@ -2046,7 +2147,8 @@ a.text-underline:hover{
         font-size: 16px;
         max-width: 221px;
         height: 50px;
-        margin-top: 28px;
+        margin-top: 58px;
+        letter-spacing: -0.8px;
     }
     .partner__link {
         font-size: 16px;

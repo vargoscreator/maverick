@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
-        once: true,
-        duration: 600
+        duration: 600, // Длительность анимации
+        once: false,   // Анимация повторяется при обратной прокрутке
     });
+    
 
     const heroBtn = document.querySelector('.hero__btn');
     const popup = document.querySelector('.popup');
@@ -90,10 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const headerBg = document.querySelector(".header__bg");
     const headerMenu = document.querySelector(".header__menu");
     const headerClose = document.querySelector(".header__menu-close");
+    const headerLinks = document.querySelectorAll(".header__link");
     const toggleActive = () => {
         headerBg.classList.toggle("active");
         headerMenu.classList.toggle("active");
-    };
+    };    
     const removeActive = () => {
         headerBg.classList.remove("active");
         headerMenu.classList.remove("active");
@@ -101,4 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
     headerBurger.addEventListener("click", toggleActive);
     headerBg.addEventListener("click", removeActive);
     headerClose.addEventListener("click", removeActive);
+    headerLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth < 1000) {
+                removeActive();
+            }
+        });
+    });
+    
 });
