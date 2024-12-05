@@ -862,13 +862,18 @@ a.text-underline:hover{
     bottom: -375px;
     left: 93px;
 }
-@media (max-width: 1640px) {
-    .valore{
-        margin-top: 0px;
+@media (max-width: 1700px) {
+    .valore__inner{
+        margin-left: 520px;
     }
     .valore__consulting,
     .valore__maverick{
         left: 60px;
+    }
+}
+@media (max-width: 1580px) {
+    .valore__inner {
+        margin-left: 470px;
     }
 }
 @media (max-width: 1500px) {
