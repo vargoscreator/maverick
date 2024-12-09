@@ -483,6 +483,17 @@ a.text-underline:hover{
     background-repeat: no-repeat;
     background-size: 90%;
 }
+.hero__title-eng{
+    position: relative;
+    top: -200px;
+}
+.hero__title-eng span:first-of-type{
+    margin-right: auto !important;
+    margin-left: 120px;
+}
+.hero__title-eng span:nth-of-type(2){
+    margin-right: 60px !important;
+}
 .hero__lamp {
     position: absolute;
     top: -306px;
@@ -1183,13 +1194,22 @@ a.text-underline:hover{
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
-.settori__name span{
+.settori__name .settori__name-stroke{
     user-select: none;
-    color: transparent;
-    position: relative;
-    background-image: url("data:image/svg+xml,%0A%3Csvg width='108' height='95' viewBox='0 0 108 95' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='path-1-inside-1_10_6610' fill='white'%3E%3Cpath d='M20.0293 1.04519L19.8152 94.1359L0.133596 94.0394L0.347747 0.948701L20.0293 1.04519ZM107.685 1.47491L107.471 94.5656L90.4712 94.4822L50.1064 35.6929L49.4246 35.6896L49.2898 94.2804L29.6082 94.1839L29.8224 1.0932L47.0949 1.17787L87.1416 59.9202L87.9598 59.9242L88.0944 1.37887L107.685 1.47491Z'/%3E%3C/mask%3E%3Cpath d='M20.0293 1.04519L23.0293 1.05989L23.0362 -1.9401L20.0362 -1.9548L20.0293 1.04519ZM19.8152 94.1359L19.8083 97.1359L22.8082 97.1506L22.8151 94.1506L19.8152 94.1359ZM0.133596 94.0394L-2.86637 94.0247L-2.87327 97.0247L0.126695 97.0394L0.133596 94.0394ZM0.347747 0.948701L0.354648 -2.05129L-2.64532 -2.066L-2.65222 0.933994L0.347747 0.948701ZM17.0294 1.03048L16.8152 94.1212L22.8151 94.1506L23.0293 1.05989L17.0294 1.03048ZM19.8221 91.1359L0.140497 91.0394L0.126695 97.0394L19.8083 97.1359L19.8221 91.1359ZM3.13356 94.0541L3.34771 0.963408L-2.65222 0.933994L-2.86637 94.0247L3.13356 94.0541ZM0.340846 3.94869L20.0224 4.04518L20.0362 -1.9548L0.354648 -2.05129L0.340846 3.94869ZM107.685 1.47491L110.685 1.48962L110.692 -1.51038L107.692 -1.52508L107.685 1.47491ZM107.471 94.5656L107.464 97.5656L110.464 97.5803L110.471 94.5803L107.471 94.5656ZM90.4712 94.4822L87.9994 96.176L88.891 97.4745L90.4643 97.4822L90.4712 94.4822ZM50.1064 35.6929L52.5781 33.9992L51.6866 32.7007L50.1133 32.6929L50.1064 35.6929ZM49.4246 35.6896L49.4315 32.6896L46.4316 32.6749L46.4247 35.6749L49.4246 35.6896ZM49.2898 94.2804L49.2829 97.2803L52.2829 97.2951L52.2898 94.2951L49.2898 94.2804ZM29.6082 94.1839L26.6083 94.1692L26.6014 97.1692L29.6013 97.1839L29.6082 94.1839ZM29.8224 1.0932L29.8293 -1.9068L26.8293 -1.9215L26.8224 1.07849L29.8224 1.0932ZM47.0949 1.17787L49.5723 -0.507626L48.6814 -1.81438L47.1018 -1.82212L47.0949 1.17787ZM87.1416 59.9202L84.6642 61.6057L85.5551 62.9124L87.1347 62.9202L87.1416 59.9202ZM87.9598 59.9242L87.9528 62.9242L90.9528 62.9389L90.9597 59.9389L87.9598 59.9242ZM88.0944 1.37887L88.1013 -1.62112L85.1014 -1.63583L85.0945 1.36416L88.0944 1.37887ZM104.685 1.4602L104.471 94.5509L110.471 94.5803L110.685 1.48962L104.685 1.4602ZM107.478 91.5656L90.4781 91.4823L90.4643 97.4822L107.464 97.5656L107.478 91.5656ZM92.9429 92.7885L52.5781 33.9992L47.6347 37.3867L87.9994 96.176L92.9429 92.7885ZM50.1133 32.6929L49.4315 32.6896L49.4177 38.6896L50.0995 38.6929L50.1133 32.6929ZM46.4247 35.6749L46.2899 94.2656L52.2898 94.2951L52.4246 35.7043L46.4247 35.6749ZM49.2967 91.2804L29.6151 91.1839L29.6013 97.1839L49.2829 97.2803L49.2967 91.2804ZM32.6082 94.1986L32.8224 1.1079L26.8224 1.07849L26.6083 94.1692L32.6082 94.1986ZM29.8155 4.09319L47.088 4.17787L47.1018 -1.82212L29.8293 -1.9068L29.8155 4.09319ZM44.6176 2.86337L84.6642 61.6057L89.6189 58.2347L49.5723 -0.507626L44.6176 2.86337ZM87.1347 62.9202L87.9528 62.9242L87.9667 56.9242L87.1485 56.9202L87.1347 62.9202ZM90.9597 59.9389L91.0944 1.39358L85.0945 1.36416L84.9598 59.9095L90.9597 59.9389ZM88.0875 4.37886L107.678 4.4749L107.692 -1.52508L88.1013 -1.62112L88.0875 4.37886Z' fill='%23FC4D04' mask='url(%23path-1-inside-1_10_6610)'/%3E%3C/svg%3E%0A");    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
+    color: #EBEBEB;
+    text-shadow: 
+        2px 2px 0 #FC4D04, 
+    -2px 2px 0 #FC4D04,
+        2px -2px 0 #FC4D04,
+    -2px -2px 0 #FC4D04;
+    -webkit-text-stroke: 3px #FC4D04;
+}
+.settori__name-eng{
+    max-width: 400px;
+}
+.settori__name-eng span:last-of-type {
+    max-width: 260px;
+    display: block;
 }
 .settori__title{
     margin-top: 10px;
@@ -1242,10 +1262,11 @@ a.text-underline:hover{
     line-height: 115%;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    margin-right: -20px;
 }
 @media (max-width: 1630px) {
     .settori__item-name{
-        font-size: 35px;
+        font-size: 32px;
     }
 }
 @media (max-width: 1500px) {
@@ -1256,10 +1277,12 @@ a.text-underline:hover{
         background-size: 100%;
         width: 1029px;
         height: 796px;
+        min-width: 330px;
+        background-position: center;
     }
     .settori__name{
         font-size: 100px;
-        max-width: 284px;
+        max-width: 300px;
     }
     .settori__descr {
         width: 256px;
@@ -1273,9 +1296,6 @@ a.text-underline:hover{
     }
     .settori__item-icon svg{
         max-width: 68px;
-    }
-    .settori__item-name{
-        font-size: 33px;
     }
     .settori__image{
         width: 246px;
@@ -1675,8 +1695,12 @@ a.text-underline:hover{
         top: 561px;
         left: 376px;
     }
+    .club__wide-descr{
+        margin-left: 20px;
+    }
     .club__wide-link {
         margin-top: 27px;
+        margin-left: 20px;
         display: block;
     }
     .club__make {
@@ -1772,6 +1796,10 @@ a.text-underline:hover{
     }
     .club__content {
         margin-top: 364px;
+    }
+    .club__wide-descr,
+    .club__wide-link{
+        margin-left: 0px;
     }
 }
 @media (max-width: 479px) {
