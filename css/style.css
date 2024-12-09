@@ -594,6 +594,12 @@ a.text-underline:hover{
         gap: 19px;
         margin-top: 0;
     }
+    .hero__title-eng{
+        top: -260px;
+    }
+    .hero__title-eng > span:first-of-type{
+        margin-top: 80px;
+    }
     .hero__descr{
         max-width: 410px;
         right: -40px;
@@ -635,6 +641,12 @@ a.text-underline:hover{
     }
     .hero__title > span:last-of-type{
         gap: 40px;
+    }
+    .hero__title-eng > span:first-of-type {
+        margin-top: 20px;
+    }
+    .hero__title-eng{
+        top: -140px;
     }
     .hero__descr {
         max-width: 316px;
@@ -689,6 +701,16 @@ a.text-underline:hover{
     .hero__title {
         font-size: 90px;
         line-height: 120px;
+    }
+    .hero__title-eng span:nth-of-type(2) {
+        margin-right: 0px !important;
+    }
+    .hero__title-eng span:first-of-type {
+        margin-left: 200px;
+    }
+    .hero__title-eng {
+        top: -90px;
+        line-height: normal;
     }
     .hero__lamp {
         top: -93px;
@@ -760,6 +782,13 @@ a.text-underline:hover{
     .hero__title {
         font-size: 56px;
         line-height: 49px;
+    }
+    .hero__title-eng{
+        top: -60px;
+        margin-bottom: -60px;
+    }
+    .hero__title-eng span:first-of-type {
+        margin-left: 100px;
     }
     .hero__lamp {
         top: -38px;
